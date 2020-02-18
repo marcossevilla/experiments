@@ -1,2 +1,5 @@
 home:
   appName: Experiments
+settings:
+  name: Settings
+  useDarkTheme: Use dark theme?

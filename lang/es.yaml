@@ -1,2 +1,5 @@
 home:
   appName: Experimentos
+settings:
+  name: Ajustes
+  useDarkTheme: ¿Usar modo oscuro?
