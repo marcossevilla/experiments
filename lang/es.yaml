@@ -1,5 +1,8 @@
 home:
   appName: Experimentos
+  paint: Pintar
 settings:
   name: Ajustes
   useDarkTheme: ¿Usar modo oscuro?
+login:
+  name: Ingresar

@@ -1,7 +1,9 @@
+import 'package:experiments/pages/paint.dart';
 import 'package:flutter/material.dart';
 
 import '../app_localizations.dart';
 import '../pages/settings.dart';
+import 'login.dart';
 
 class HomePage extends StatelessWidget {
   static const String routeName = 'home';
@@ -16,15 +18,28 @@ class HomePage extends StatelessWidget {
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.settings),
-            onPressed: () => Navigator.of(context).pushNamed(
-              SettingsPage.routeName,
-            ),
+            onPressed: () {
+              Navigator.of(context).pushNamed(SettingsPage.routeName);
+            },
           )
         ],
       ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: <Widget>[
+            RaisedButton(
+              child: Text(AppLocalizations.of(context).translate('home.paint')),
+              onPressed: () {
+                Navigator.of(context).pushNamed(PaintPage.routeName);
+              },
+            ),
+          ],
+        ),
+      ),
       floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.apps),
-        onPressed: () {},
+        child: Icon(Icons.verified_user),
+        onPressed: () => Navigator.of(context).pushNamed(LoginPage.routeName),
       ),
     );
   }

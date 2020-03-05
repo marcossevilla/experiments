@@ -3,8 +3,9 @@ import 'package:flutter/material.dart';
 class ThemeProvider with ChangeNotifier {
   bool _useDarkTheme = false;
 
-  ThemeData get currentTheme =>
-      _useDarkTheme ? ThemeData.dark() : ThemeData.light();
+  ThemeData get currentTheme {
+    return _useDarkTheme ? ThemeData.dark() : ThemeData.light();
+  }
 
   bool get useDarkTheme => _useDarkTheme;
 

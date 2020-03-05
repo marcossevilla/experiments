@@ -1,5 +1,8 @@
 home:
   appName: Experiments
+  paint: Paint
 settings:
   name: Settings
   useDarkTheme: Use dark theme?
+login:
+  name: Login
